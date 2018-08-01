@@ -8,7 +8,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/bootswatch.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
-    <script src="js/main.js"></script>
 </head>
 
 <body>
@@ -26,6 +25,7 @@
                 <input type="text" class="form-control" id="searchText" placeholder="Buscar Peliculas">
             </form>
         </div>
+        <button onclick="getMovieById()">peli</button>
     </div>
     <div class="container">
         <div id="movies" class="row">
@@ -33,6 +33,8 @@
         </div>
     </div>
     <script src="js/jquery.js"></script>
+    <script src="js/axios.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
