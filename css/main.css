@@ -1,0 +1,18 @@
+#movies img,
+#movie img {
+    width: 100%;
+}
+
+#movies .col-md-3 .well {
+    margin-bottom: 10%;
+}
+
+@media(min-width:960px) {
+    #movies .col-md-3 .well {
+        height: 450px;
+        margin-bottom: 30%;
+    }
+    #movies .col-md-3 img {
+        height: 380px;
+    }
+}
