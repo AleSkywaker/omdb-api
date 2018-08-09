@@ -33,3 +33,10 @@ function getMovies(searchText) {
             console.log(err);
         })
 }
+
+function movieSelected(id) {
+    console.log("id", id);
+    sessionStorage.setItem('movie', id);
+    window.location = 'movie.html';
+    return false;
+}
