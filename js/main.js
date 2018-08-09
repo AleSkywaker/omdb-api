@@ -51,16 +51,15 @@ function getMovie() {
             let movie = response.data;
             console.log("peliculas", movie);
 
-            let output = "";
-
-
-            output += `
+            let output = `
+            <div class="row">
             <div class="col-md-6">
-            <div class="well text-center">
-            <img src="${movie.Poster}">
+
+            <img src="${movie.Poster}" class="thumbnail">
             <h5>${movie.Title}<h5/>
             <a href="index.html" class="btn btn-secondary" href="#">Volver</a>
             </div>
+
             </div>
             `
 
