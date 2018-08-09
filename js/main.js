@@ -53,13 +53,23 @@ function getMovie() {
 
             let output = `
             <div class="row">
-            <div class="col-md-6">
-
+            <div class="col-md-4">
             <img src="${movie.Poster}" class="thumbnail">
-            <h5>${movie.Title}<h5/>
+            </div>
+            <div class="col-md-8">
+            <h2>${movie.Title}</h2>
+             <ul class="list-group">
+             <li class="list-group-item"><strong>Genero: </strong> ${movie.Genre}</li>
+             <li class="list-group-item"><strong>Lanzamiento: </strong> ${movie.Realesed}</li>
+             <li class="list-group-item"><strong>Puntuación: </strong> ${movie.Rated}</li>
+             <li class="list-group-item"><strong>IMDB valoración: </strong> ${movie.imdbRating}</li>
+             <li class="list-group-item"><strong>Director: </strong> ${movie.Director}</li>
+             <li class="list-group-item"><strong>Guionista: </strong> ${movie.Writer}</li>
+             <li class="list-group-item"><strong>Actores: </strong> ${movie.Actors}</li>
             <a href="index.html" class="btn btn-secondary" href="#">Volver</a>
             </div>
-
+            </div>
+            <div class="row">
             </div>
             `
 
