@@ -66,10 +66,14 @@ function getMovie() {
              <li class="list-group-item"><strong>Director: </strong> ${movie.Director}</li>
              <li class="list-group-item"><strong>Guionista: </strong> ${movie.Writer}</li>
              <li class="list-group-item"><strong>Actores: </strong> ${movie.Actors}</li>
-            <a href="index.html" class="btn btn-secondary" href="#">Volver</a>
+             </div>
+             </div>
+             <div class="row">
+             <div class="well">
+             <h3>${movie.Plot}</h3>
+             <a href="index.html" class="btn btn-secondary" href="#">Volver</a>
+             <a href="http://imdb.com/tittle/${movie.imdbID}" target="_blank"class="btn btn-warning" href="#">Ver en IMDB</a>
             </div>
-            </div>
-            <div class="row">
             </div>
             `
 
