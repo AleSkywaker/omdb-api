@@ -60,8 +60,9 @@ function getMovie() {
             <h2>${movie.Title}</h2>
              <ul class="list-group">
              <li class="list-group-item"><strong>Genero: </strong> ${movie.Genre}</li>
-             <li class="list-group-item"><strong>Lanzamiento: </strong> ${movie.Realesed}</li>
-             <li class="list-group-item"><strong>Puntuación: </strong> ${movie.Rated}</li>
+             <li class="list-group-item"><strong>Lanzamiento: </strong> ${movie.Released}</li>
+             <li class="list-group-item"><strong>Duración: </strong> ${movie.Runtime}</li>
+             <li class="list-group-item"><strong>Calificación: </strong> ${movie.Rated}</li>
              <li class="list-group-item"><strong>IMDB valoración: </strong> ${movie.imdbRating}</li>
              <li class="list-group-item"><strong>Director: </strong> ${movie.Director}</li>
              <li class="list-group-item"><strong>Guionista: </strong> ${movie.Writer}</li>
@@ -72,7 +73,7 @@ function getMovie() {
              <div class="well">
              <h3>${movie.Plot}</h3>
              <a href="index.html" class="btn btn-secondary" href="#">Volver</a>
-             <a href="http://imdb.com/tittle/${movie.imdbID}" target="_blank"class="btn btn-warning" href="#">Ver en IMDB</a>
+             <a href="http://imdb.com/title/${movie.imdbID}" target="_blank"class="btn btn-warning" href="#">Ver en IMDB</a>
             </div>
             </div>
             `
