@@ -35,8 +35,41 @@ function getMovies(searchText) {
 }
 
 function movieSelected(id) {
-    console.log("id", id);
-    sessionStorage.setItem('movie', id);
+    sessionStorage.setItem('movieId', id);
     window.location = 'movie.html';
     return false;
+}
+
+function getMovie() {
+    let movieID = sessionStorage.getItem('movieId');
+    console.log("id", movieID);
+
+    axios.get('http://www.omdbapi.com/?i=' + movieID + '&apikey=64c3a3b4')
+        .then((response) => {
+            console.log(response);
+
+            let movie = response.data;
+            console.log("peliculas", movie);
+
+            let output = "";
+
+
+            output += `
+            <div class="col-md-6">
+            <div class="well text-center">
+            <img src="${movie.Poster}">
+            <h5>${movie.Title}<h5/>
+            <a href="index.html" class="btn btn-secondary" href="#">Volver</a>
+            </div>
+            </div>
+            `
+
+
+            $('#movie').html(output)
+        })
+        .catch((err) => {
+            console.log(err);
+        })
+
+
 }
